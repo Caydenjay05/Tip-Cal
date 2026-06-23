@@ -16,10 +16,11 @@ document.getElementById("calculateButton").onclick = function () // Calculate ti
 };
 document.getElementById("calculateBillSplit").onclick = function () // Calculate bill split
 {
-    let bill = document.getElementById("billAmount").value;// Get bill amount from input field
+    let billAmount = document.getElementById("billSplit").value;// Get bill amount from input field
     let amountofPeople = document.getElementById("numberOfPeople").value; // Get number of people to split the bill
-    let totalPerPerson = bill / amountofPeople; // Calculate total amount per person
+    let totalPerPerson = billamount / amountofPeople; // Calculate total amount per person
 
     document.getElementById("resultBill").textContent =
         "Total Per Person: $" + totalPerPerson.toFixed(2);// Display total per person in result div
+    
 }
